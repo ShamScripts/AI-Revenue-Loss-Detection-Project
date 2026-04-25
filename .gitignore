@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .DS_Store
+
+# Streamlit dashboard: Google Drive fallback extracts here (do not commit)
+runtime_artifacts/
