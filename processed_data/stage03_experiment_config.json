@@ -1,0 +1,7 @@
+{
+  "split_mode": "random",
+  "stage": 3,
+  "tensorflow_import_ok": false,
+  "tensorflow_version": null,
+  "dnn_backend": "MLPClassifier (sklearn fallback)"
+}

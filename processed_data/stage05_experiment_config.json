@@ -1,0 +1,6 @@
+{
+  "stage": 5,
+  "n_nodes": 46564,
+  "n_edges_used": 36624,
+  "note": "GCN uses full graph (transductive); test metrics on time-held-out nodes."
+}

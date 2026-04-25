@@ -1,0 +1,6 @@
+{
+  "split_mode": "random",
+  "use_smote": false,
+  "tune_gbdt": false,
+  "stage": 2
+}

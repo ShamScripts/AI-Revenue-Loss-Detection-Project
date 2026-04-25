@@ -1,0 +1,26 @@
+# Lightweight check: package imports without full ML stack (no TensorFlow in CI).
+name: CI smoke
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  import-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Editable install
+        run: pip install -e .
+
+      - name: Import package
+        run: python -c "import fraud_ml; print('fraud_ml', fraud_ml.__version__)"

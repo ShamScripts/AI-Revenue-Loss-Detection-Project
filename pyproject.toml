@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fraud-ml"
+version = "1.0.0"
+description = "IEEE-CIS & Elliptic fraud detection pipeline"
+readme = "README.md"
+# Align with TensorFlow wheels: use 3.11 recommended; 3.10–3.12 supported; avoid 3.13+ until deps catch up.
+requires-python = ">=3.10,<3.13"
+dependencies = []
+
+[project.optional-dependencies]
+# Install from requirements.txt for full stack; this keeps pyproject minimal.
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

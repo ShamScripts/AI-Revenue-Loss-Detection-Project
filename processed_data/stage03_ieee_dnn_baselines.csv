@@ -1,0 +1,2 @@
+model,split,val_roc_auc
+MLPClassifier (sklearn fallback; no TF attention path),random,0.9462061313274828

@@ -1,0 +1,12 @@
+# Normalize line endings for cross-platform GitHub collaboration
+* text=auto eol=lf
+
+# Windows scripts
+*.bat text eol=crlf
+
+# Binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.woff2 binary
