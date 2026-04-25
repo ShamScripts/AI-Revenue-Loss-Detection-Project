@@ -1,6 +1,6 @@
 # AI Revenue Leakage Detection — Hybrid ML System
 
-End-to-end **revenue leakage / payment fraud** detection on **IEEE-CIS** transactional data, with optional **Elliptic** Bitcoin graph analytics, **gradient-boosted trees**, **deep learning**, **anomaly detection**, and a **hybrid fusion** stage. This folder is **self-contained**: datasets, processed artifacts, figures, and a **Streamlit** dashboard ship together for GitHub, Streamlit Cloud, or offline USB submission.
+End-to-end **revenue leakage / payment fraud** detection on **IEEE-CIS** transactional data, with optional **Elliptic** Bitcoin graph analytics, **gradient-boosted trees**, **deep learning**, **anomaly detection**, and a **hybrid fusion** stage.
 
 ---
 
