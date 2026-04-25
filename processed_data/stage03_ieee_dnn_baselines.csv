@@ -1,2 +1,3 @@
-model,split,val_roc_auc
-MLPClassifier (sklearn fallback; no TF attention path),random,0.9462061313274828
+version https://git-lfs.github.com/spec/v1
+oid sha256:0593341821d583b9acb432cafea0108cd7300808beca651378a89c80d65df961
+size 105

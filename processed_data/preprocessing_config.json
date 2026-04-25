@@ -1,0 +1,67 @@
+{
+  "pipeline": "fraud_ml.pipeline.stage01_data",
+  "missing_drop_threshold": 0.9,
+  "ieee": {
+    "numeric_imputation": "median (sklearn SimpleImputer)",
+    "categorical_imputation": "fillna(Unknown)",
+    "dropped_columns_high_missing": [
+      "dist2",
+      "D7",
+      "id_07",
+      "id_08",
+      "id_18",
+      "id_21",
+      "id_22",
+      "id_23",
+      "id_24",
+      "id_25",
+      "id_26",
+      "id_27"
+    ],
+    "n_dropped_columns": 12,
+    "output_files": [
+      "E:\\New folder\\AI-Revenue-Loss-Detection\\processed_data\\ieee_train_merged_cleaned.csv"
+    ],
+    "final_shape": [
+      590540,
+      428
+    ],
+    "target_distribution": {
+      "0": 569877,
+      "1": 20663
+    },
+    "engineered_columns_ieee": [
+      "rel_day",
+      "rel_hour",
+      "is_weekend_like",
+      "amt_log",
+      "amt_to_rel_day_mean_ratio",
+      "amt_to_card1_mean_ratio"
+    ]
+  },
+  "elliptic": {
+    "class_mapping": "raw -> licit | illicit | unknown",
+    "eda_keeps_unknown": true,
+    "modeling_note": "Typically train on licit vs illicit; handle unknown separately.",
+    "graph_features": [
+      "in_degree",
+      "out_degree",
+      "total_degree",
+      "is_isolated",
+      "degree_in_out_ratio",
+      "high_degree (>= p90 total_degree)"
+    ],
+    "output_files": [
+      "E:\\New folder\\AI-Revenue-Loss-Detection\\processed_data\\elliptic_transactions_cleaned.csv"
+    ],
+    "final_shape": [
+      203769,
+      175
+    ],
+    "class_distribution": {
+      "unknown": 157205,
+      "illicit": 42019,
+      "licit": 4545
+    }
+  }
+}
